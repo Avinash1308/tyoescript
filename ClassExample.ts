@@ -14,3 +14,19 @@ class Student{
 }
 const s1= new Student("Avinash",11,true);
 s1.display();
+
+//another method
+
+class Student{
+   constructor(
+        readonly name:string,
+        private roll:number,
+        protected ispass:boolean
+
+    ){}
+    public display() : void{
+        console.log(this.name +"of roll num" + this.roll + "is" +this.ispass)
+    }
+}
+const s1= new Student("Avinash",11,true);
+s1.display();
